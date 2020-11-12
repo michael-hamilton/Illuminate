@@ -1,0 +1,7 @@
+{
+  "name": "illuminate",
+  "version": "1.0.0",
+  "main": "illuminate.js",
+  "author": "Michael Hamilton <michaelhamilton626@gmail.com>",
+  "license": "Apache-2.0"
+}
