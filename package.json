@@ -1,7 +1,13 @@
 {
-  "name": "illuminate",
-  "version": "1.0.0",
+  "name": "dmxus-repl",
+  "version": "0.1.0",
   "main": "illuminate.js",
   "author": "Michael Hamilton <michaelhamilton626@gmail.com>",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "node illuminate"
+  },
+  "dependencies": {
+    "dmxus": "^0.5.4"
+  }
 }
