@@ -1,5 +1,5 @@
 {
-  "name": "dmxus-repl",
+  "name": "illuminate",
   "version": "0.1.0",
   "main": "illuminate.js",
   "author": "Michael Hamilton <michaelhamilton626@gmail.com>",
@@ -8,6 +8,7 @@
     "dev": "node illuminate"
   },
   "dependencies": {
+    "blessed": "^0.1.81",
     "dmxus": "^0.5.4"
   }
 }
