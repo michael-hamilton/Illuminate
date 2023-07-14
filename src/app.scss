@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'IBMPlexSans-Light';
+	src: url('../resources/fonts/IBM_Plex_Sans/IBMPlexSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'IBMPlexSans-Bold';
+	src: url('../resources/fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf') format('truetype');
+}
+
+.app-container {
+	background-color: #373737;
+	display: flex;
+	font-family: IBMPlexSans-Light, sans-serif;
+	height: 100%;
+	width: 100%;
+}

@@ -1,0 +1,20 @@
+.fader-bank-wrapper {
+	background-color: #cccccc;
+	display: flex;
+	padding: 1rem;
+	user-select: none;
+
+	.channel-wrapper {
+		display: flex;
+		flex-direction: column;
+		margin: 0.1rem;
+		width: 2rem;
+
+		.channel-name {
+			font-size: 0.5rem;
+			overflow: hidden;
+			text-align: center;
+
+		}
+	}
+}

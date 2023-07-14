@@ -1,0 +1,22 @@
+.bump-button-wrapper {
+	background-color: #ffffff;
+	border: 0.1rem solid #aaaaaa;
+	display: flex;
+	flex-direction: column;
+	height: 2rem;
+	width: 2rem;
+
+	button {
+		background-color: #ffffff;
+		border: none;
+		flex: 1;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		&:active {
+			background-color: #eeeeee;
+		}
+	}
+}

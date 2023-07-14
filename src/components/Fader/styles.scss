@@ -1,0 +1,24 @@
+.fader-wrapper {
+	align-items: center;
+	background-color: #ffffff;
+	border: 0.1rem solid #aaaaaa;
+	display: flex;
+	flex-direction: column;
+	height: 10rem;
+	justify-content: center;
+	padding: 0.3rem;
+	width: 2rem;
+
+	.fader-readout {
+		color: #0000ff;
+	}
+
+	.fader-id {
+		color: #373737;
+	}
+
+	input {
+		-webkit-appearance: slider-vertical;
+		width: 1.6rem;
+	}
+}
