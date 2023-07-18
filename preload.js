@@ -1,5 +1,5 @@
 const { contextBridge, ipcRenderer } = require('electron')
 
-contextBridge.exposeInMainWorld('electronAPI', {
-	test: (test) => ipcRenderer.send('test', test)
-})
+contextBridge.exposeInMainWorld('illuminate', {
+	updateChannel: (channel, value) => ipcRenderer.send('updateChannel', channel, value)
+});

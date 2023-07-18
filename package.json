@@ -1,7 +1,6 @@
 {
   "name": "illuminate",
   "version": "0.1.0",
-  "main": "index.js",
   "author": "Michael Hamilton <mike@miska.me>",
   "license": "Apache-2.0",
   "scripts": {
@@ -23,7 +22,8 @@
       "server/**/*",
       "dist/**/*",
       "resources/**/*",
-      "preload.js"
+      "preload.js",
+      "devices.json"
     ]
   },
   "devDependencies": {
@@ -39,7 +39,8 @@
   "dependencies": {
     "dmxus": "git+ssh://git@github.com:michael-hamilton/dmxus.git",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "serialport": "^11.0.0"
   },
   "alias": {
     "process": false

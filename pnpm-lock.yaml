@@ -11,12 +11,14 @@ specifiers:
   path-browserify: ^1.0.1
   react: ^18.2.0
   react-dom: ^18.2.0
+  serialport: ^11.0.0
   wait-on: ^7.0.1
 
 dependencies:
   dmxus: github.com/michael-hamilton/dmxus/963725daf7650fcee37f3c7965afa0f91ba782ba
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  serialport: 11.0.0
 
 devDependencies:
   '@parcel/transformer-sass': 2.8.3
@@ -2611,6 +2613,20 @@ packages:
       - supports-color
     dev: false
 
+  /@serialport/bindings-cpp/11.0.1:
+    resolution: {integrity: sha512-3I1mniVg3osYuIUXxU0jB5AHPsxWmErmc3JC3WfUSlfXsjWMHkHfFzbW9Scuv/z/6DLCJIDyltabRa2FoW2qsQ==}
+    engines: {node: '>=14.0.0'}
+    requiresBuild: true
+    dependencies:
+      '@serialport/bindings-interface': 1.2.2
+      '@serialport/parser-readline': 10.5.0
+      debug: 4.3.4
+      node-addon-api: 6.1.0
+      node-gyp-build: 4.6.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
   /@serialport/bindings-interface/1.2.2:
     resolution: {integrity: sha512-CJaUd5bLvtM9c5dmO9rPBHPXTa9R2UwpkJ0wdh9JCYcbrPWsKz+ErvR0hBLeo7NPeiFdjFO4sonRljiw4d2XiA==}
     engines: {node: ^12.22 || ^14.13 || >=16}
@@ -2636,8 +2652,18 @@ packages:
     engines: {node: '>=12.0.0'}
     dev: false
 
+  /@serialport/parser-byte-length/11.0.0:
+    resolution: {integrity: sha512-rExsdFKdzOIHOBqTwzxUF1A9nrluVIZKZOtvMq5i0Hc3euooGdmkx0VXYNRlI2rd6kJLTL2P+uIR+ZtCTRyT+w==}
+    engines: {node: '>=12.0.0'}
+    dev: false
+
   /@serialport/parser-cctalk/10.5.0:
     resolution: {integrity: sha512-Iwsdr03xmCKAiibLSr7b3w6ZUTBNiS+PwbDQXdKU/clutXjuoex83XvsOtYVcNZmwJlVNhAUbkG+FJzWwIa4DA==}
+    engines: {node: '>=12.0.0'}
+    dev: false
+
+  /@serialport/parser-cctalk/11.0.0:
+    resolution: {integrity: sha512-eN1MvEIFwI4GedWJhte6eWF+NZtrjchZbMf0CE6NV9TRzJI1KLnFf90ZOj/mhGuANojX4sqWfJKQXwN6E8VSHQ==}
     engines: {node: '>=12.0.0'}
     dev: false
 
@@ -2651,13 +2677,28 @@ packages:
     engines: {node: '>=12.0.0'}
     dev: false
 
+  /@serialport/parser-delimiter/11.0.0:
+    resolution: {integrity: sha512-aZLJhlRTjSmEwllLG7S4J8s8ctRAS0cbvCpO87smLvl3e4BgzbVgF6Z6zaJd3Aji2uSiYgfedCdNc4L6W+1E2g==}
+    engines: {node: '>=12.0.0'}
+    dev: false
+
   /@serialport/parser-inter-byte-timeout/10.5.0:
     resolution: {integrity: sha512-WPvVlSx98HmmUF9jjK6y9mMp3Wnv6JQA0cUxLeZBgS74TibOuYG3fuUxUWGJALgAXotOYMxfXSezJ/vSnQrkhQ==}
     engines: {node: '>=12.0.0'}
     dev: false
 
+  /@serialport/parser-inter-byte-timeout/11.0.0:
+    resolution: {integrity: sha512-RLgqZC50IET6FtEIt6Oi0vdRsesSBWLNwB7ldzR9OzyXKgK0XHRzqKqbB0u5Q+tC5OScdWeiQ2AO6jooKUZtsw==}
+    engines: {node: '>=12.0.0'}
+    dev: false
+
   /@serialport/parser-packet-length/10.5.0:
     resolution: {integrity: sha512-jkpC/8w4/gUBRa2Teyn7URv1D7T//0lGj27/4u9AojpDVXsR6dtdcTG7b7dNirXDlOrSLvvN7aS5/GNaRlEByw==}
+    engines: {node: '>=8.6.0'}
+    dev: false
+
+  /@serialport/parser-packet-length/11.0.0:
+    resolution: {integrity: sha512-6ZkOiaCooabpV/EM7ttSRbisbDWpGEf7Yxyr13t28LicYR43THRdjdMZcRnWxEM/jpwfskkLLXAR6wziVpKrlw==}
     engines: {node: '>=8.6.0'}
     dev: false
 
@@ -2675,8 +2716,20 @@ packages:
       '@serialport/parser-delimiter': 10.5.0
     dev: false
 
+  /@serialport/parser-readline/11.0.0:
+    resolution: {integrity: sha512-rRAivhRkT3YO28WjmmG4FQX6L+KMb5/ikhyylRfzWPw0nSXy97+u07peS9CbHqaNvJkMhH1locp2H36aGMOEIA==}
+    engines: {node: '>=12.0.0'}
+    dependencies:
+      '@serialport/parser-delimiter': 11.0.0
+    dev: false
+
   /@serialport/parser-ready/10.5.0:
     resolution: {integrity: sha512-QIf65LTvUoxqWWHBpgYOL+soldLIIyD1bwuWelukem2yDZVWwEjR288cLQ558BgYxH4U+jLAQahhqoyN1I7BaA==}
+    engines: {node: '>=12.0.0'}
+    dev: false
+
+  /@serialport/parser-ready/11.0.0:
+    resolution: {integrity: sha512-lSsCPIctoc5kADCKnZDYBz1j69TsFqtnaWUicBzUAIAoUXpYKeYld8YX5NrvjViuVfIJeiqLZeGjxOWe5fqQqQ==}
     engines: {node: '>=12.0.0'}
     dev: false
 
@@ -2685,8 +2738,18 @@ packages:
     engines: {node: '>=12.0.0'}
     dev: false
 
+  /@serialport/parser-regex/11.0.0:
+    resolution: {integrity: sha512-aKuc/+/KE9swahTbYpSuOsQa7LggPx7jhfobJLPVVbAic80OpfCIY+MKr6Ax4R6UtQwF90O5Yk6OEmbbvtEmiA==}
+    engines: {node: '>=12.0.0'}
+    dev: false
+
   /@serialport/parser-slip-encoder/10.5.0:
     resolution: {integrity: sha512-wP8m+uXQdkWSa//3n+VvfjLthlabwd9NiG6kegf0fYweLWio8j4pJRL7t9eTh2Lbc7zdxuO0r8ducFzO0m8CQw==}
+    engines: {node: '>=12.0.0'}
+    dev: false
+
+  /@serialport/parser-slip-encoder/11.0.0:
+    resolution: {integrity: sha512-3ZI/swd2it20vmu2tzqDbkyE4dqy+kExEDY6T33YQ210HDKPVhqj7FAVGo5P++MZ3dup1of11t4P9UPBNkuJnQ==}
     engines: {node: '>=12.0.0'}
     dev: false
 
@@ -2695,8 +2758,23 @@ packages:
     engines: {node: '>=12.0.0'}
     dev: false
 
+  /@serialport/parser-spacepacket/11.0.0:
+    resolution: {integrity: sha512-+hqRckrTEqz+/uAUZY0Tq6YIRyCl4oQOH1MeVzKiFiGNjZP7hDJCDoY7LTr9CeJhxvcT0ItTbtjGBqGumV8fxg==}
+    engines: {node: '>=12.0.0'}
+    dev: false
+
   /@serialport/stream/10.5.0:
     resolution: {integrity: sha512-gbcUdvq9Kyv2HsnywS7QjnEB28g+6OGB5Z8TLP7X+UPpoMIWoUsoQIq5Kt0ZTgMoWn3JGM2lqwTsSHF+1qhniA==}
+    engines: {node: '>=12.0.0'}
+    dependencies:
+      '@serialport/bindings-interface': 1.2.2
+      debug: 4.3.4
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /@serialport/stream/11.0.0:
+    resolution: {integrity: sha512-Zty7B8C1H2XRnay2mVmW1ygEHXRHXQDcaC5wAVvOZMbQSc7ye03rMlPvviDS+pGxU2t2A2bMo34CUrRduSBong==}
     engines: {node: '>=12.0.0'}
     dependencies:
       '@serialport/bindings-interface': 1.2.2
@@ -7799,6 +7877,10 @@ packages:
     resolution: {integrity: sha512-eh0GgfEkpnoWDq+VY8OyvYhFEzBk6jIYbRKdIlyTiAXIVJ8PyBaKb0rp7oDtoddbdoHWhq8wwr+XZ81F1rpNdA==}
     dev: false
 
+  /node-addon-api/6.1.0:
+    resolution: {integrity: sha512-+eawOlIgy680F0kBzPUNFhMZGtJ1YmqM6l4+Crf4IkImjYrO/mqPwRMh352g23uIaQKFItcQ64I7KMaJxHgAVA==}
+    dev: false
+
   /node-api-version/0.1.4:
     resolution: {integrity: sha512-KGXihXdUChwJAOHO53bv9/vXcLmdUsZ6jIptbvYvkpKfth+r7jw44JkVxQFA3kX5nQjzjmGu1uAu/xNNLNlI5g==}
     dependencies:
@@ -9619,6 +9701,28 @@ packages:
       '@serialport/parser-slip-encoder': 10.5.0
       '@serialport/parser-spacepacket': 10.5.0
       '@serialport/stream': 10.5.0
+      debug: 4.3.4
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /serialport/11.0.0:
+    resolution: {integrity: sha512-bxs3XejQcOHWpzPAaXMhxVRlbem6fjNUrux3ToqrGvFR6BcjOYhqE5CsHOuutv37kmhmnuHrn+/hN+1BpTmaFg==}
+    engines: {node: '>=12.0.0'}
+    dependencies:
+      '@serialport/binding-mock': 10.2.2
+      '@serialport/bindings-cpp': 11.0.1
+      '@serialport/parser-byte-length': 11.0.0
+      '@serialport/parser-cctalk': 11.0.0
+      '@serialport/parser-delimiter': 11.0.0
+      '@serialport/parser-inter-byte-timeout': 11.0.0
+      '@serialport/parser-packet-length': 11.0.0
+      '@serialport/parser-readline': 11.0.0
+      '@serialport/parser-ready': 11.0.0
+      '@serialport/parser-regex': 11.0.0
+      '@serialport/parser-slip-encoder': 11.0.0
+      '@serialport/parser-spacepacket': 11.0.0
+      '@serialport/stream': 11.0.0
       debug: 4.3.4
     transitivePeerDependencies:
       - supports-color

@@ -2,5 +2,6 @@
 .DS_Store
 .idea
 .parcel-cache
+build
 dist
 node_modules
